@@ -1,3 +1,6 @@
+.bodycnt{
+	filter: blur(10px);
+}
 .logo_ol{
 	height: 40px;
 	width: 240px;
@@ -24,7 +27,11 @@
     justify-content: center;
     align-items: center;
     color: white;
-    overflow-y: hidden;
+}
+#quote{
+	padding: 0 78px;
+	text-align: center;
+	word-wrap: wrap;
 }
 a.white-btn {
 	border: 1px solid #fff;

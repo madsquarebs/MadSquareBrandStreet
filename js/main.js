@@ -11,6 +11,7 @@ $(document).ready(function(){
 	    });
 	 function hideOverlay(){
 	 	$(".overlay").fadeOut();
+	 	$("#bodycnt").removeClass("bodycnt");
 	 }
 	 $(".close_btn").click(function(){
 	 	hideOverlay();
