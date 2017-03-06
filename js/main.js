@@ -6,11 +6,13 @@ $(document).ready(function(){
 	        success: function(msg){
 	        	quotes = msg;
 	        	$("#quote").html(quotes);
+	        	$('body').css({'overflow':'hidden'});
 	        	setTimeout(hideOverlay,10000);
 	        }
 	    });
 	 function hideOverlay(){
 	 	$(".overlay").fadeOut();
+	 	$('body').css({'overflow':'visible'});
 	 	$("#bodycnt").removeClass("bodycnt");
 	 }
 	 $(".close_btn").click(function(){
