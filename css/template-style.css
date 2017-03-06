@@ -29,6 +29,8 @@
     color: white;
 }
 #quote{
+	font-size: 20px;
+	font-family: Comic Sans MS;
 	padding: 0 78px;
 	text-align: center;
 	word-wrap: wrap;
