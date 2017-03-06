@@ -5,9 +5,16 @@ $(document).ready(function(){
 	        url:"quotes/quotes.php",
 	        success: function(msg){
 	        	quotes = msg;
-	        	// alert(quotes);	
+	        	$("#quote").html(quotes);
+	        	setTimeout(hideOverlay,10000);
 	        }
 	    });
+	 function hideOverlay(){
+	 	$(".overlay").fadeOut();
+	 }
+	 $(".close_btn").click(function(){
+	 	hideOverlay();
+	 });
 	console.log("MadSquare Brand Street Pvt.Ltd");
 	console.log("All the images and other files that you are wanting from our site aren't free, you will have to pay for those images and files with prior punishment soon.");
     $("#submit").click(function(){

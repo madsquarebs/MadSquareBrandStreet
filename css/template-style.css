@@ -1,3 +1,31 @@
+.logo_ol{
+	height: 40px;
+	width: 240px;
+	position: absolute;
+	bottom: 20%;
+}
+.close_btn{
+    top: 20px;
+    right: 20px;
+    position: absolute;
+    color: #c0c5ce !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow-y: hidden;
+}
 a.white-btn {
 	border: 1px solid #fff;
 	border-radius: 3px;
