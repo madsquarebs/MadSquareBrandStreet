@@ -7,7 +7,7 @@ $(document).ready(function(){
 	        	quotes = msg;
 	        	$("#quote").html(quotes);
 	        	$('body').css({'overflow':'hidden'});
-	        	setTimeout(hideOverlay,10000);
+	        	// setTimeout(hideOverlay,10000);
 	        }
 	    });
 	 function hideOverlay(){
