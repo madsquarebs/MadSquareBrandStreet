@@ -54,9 +54,8 @@
             </div>  
          </div>
       </header> 
-      <div style="ali" class="s-12 m-12 l-5">
-      				<h2>helloo</h2>
-      				<h2>heeekkkk</h2>
+      <div class="form_div">
+      	<div class="career_form">
                     <form class="customform" method="POST" action="career.php" enctype="multipart/form-data">
                       <div class="s-12"><input id="name" name="name" placeholder="Your name" title="Your name" type="text" /></div>
                       <div class="s-12"><textarea id="msg" placeholder="Description" name="msg" rows="5"></textarea></div>
@@ -72,12 +71,13 @@
                       	<option id="vid">Adfilm Maker/Video Maker</option>
                       </select></div>
                       <div class="s-12"><input id="link" name="link" placeholder="Links for your Work ( If any )." title="Link" type="text" /></div>
-                      <div class="s-12 m-12 l-4"><input type="file" name="fileToUpload" id="fileToUpload"></div>
+                      <div class="s-12 m-12 l-12"><input type="file" name="fileToUpload" id="fileToUpload"></div>
                       <div><p style="display: none;" id="ValErr"><font color="red"> Please fill the details to submit the form successfully.</font></p></div>
                       <div><p style="display: none;" id="CaptchaErr"><font color="red"> Captcha Error: please prove you are a human.</font></p></div>
-                      <div class="s-12 m-12 l-4"><button id='submit' class="color-btn" type="submit">Submit Button</button></div>
+                      <div class="s-12 m-12 l-12"><button id='submit' class="color-btn" type="submit">Submit Button</button></div>
                        <div class="g-recaptcha" id="captcha" data-sitekey="6LciVhYUAAAAAC5-qXdxVJ0uo8qwocMaxsODJylI"></div>
                     </form>
-                  </div>                 
+                </div>
+            </div>                 
 </body>
 </html>

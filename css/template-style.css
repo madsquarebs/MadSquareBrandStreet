@@ -573,3 +573,8 @@ footer p, footer a:visited, footer a, footer a:hover {
   	text-align: center;
   }
 }
+.form_div{
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 100px;
+}
