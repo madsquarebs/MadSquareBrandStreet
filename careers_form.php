@@ -21,7 +21,7 @@
       <script type="text/javascript" src="js/template-scripts.js"></script>
       <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
-<body class="size-1140">
+<body style="background: white;">
 <header> 
          <nav>
             <div class="line">
@@ -29,7 +29,7 @@
                   <p class="logo" alt="MadSquare chennai"><img src="img/Madsquare-wt.png"></p>
                </div>
                <div class="top-nav s-12 l-10">
-                  <p class="nav-text">Custom menu text</p>
+                  <!-- <p class="nav-text">Custom menu text</p> -->
                   <!-- <ul class="right">
                      <li class="active-item"><a href="#carousel">Home</a></li>
                      <li><a href="#features">Features</a></li>
@@ -54,12 +54,25 @@
             </div>  
          </div>
       </header> 
-      <div class="s-12 m-12 l-5">
-                    <h3>Contact form</h3>
-                    <form class="customform" method="POST" action="">
-                      <div class="s-12"><input id="mail" name="mail" placeholder="Your e-mail" title="Your e-mail" type="text" /></div>
+      <div style="ali" class="s-12 m-12 l-5">
+      				<h2>helloo</h2>
+      				<h2>heeekkkk</h2>
+                    <form class="customform" method="POST" action="career.php" enctype="multipart/form-data">
                       <div class="s-12"><input id="name" name="name" placeholder="Your name" title="Your name" type="text" /></div>
-                      <div class="s-12"><textarea id="msg" placeholder="Your message" name="msg" rows="5"></textarea></div>
+                      <div class="s-12"><textarea id="msg" placeholder="Description" name="msg" rows="5"></textarea></div>
+                      <div class="s-12"><input id="mail" name="mail" placeholder="Your e-mail" title="Your e-mail" type="text" /></div>
+                      <div class="s-12"><input id="mobile" name="mobile" placeholder="Your conatct number" title="Your contact number" type="number" /></div>
+                      <div class="s-12"><textarea id="addr" placeholder="Contact Address" name="addr" rows="5"></textarea></div>
+                      <div class="s-12"><select id="roll" name="roll" >
+                      	<option id="anim">Animator</option>	
+                      	<option id="cw">Copy Writer</option>
+                      	<option id="des">Designer(Photoshop, Illustrator, etc.)</option>
+                      	<option id="model">Model</option>
+                      	<option id="sound">Sound Engineer</option>
+                      	<option id="vid">Adfilm Maker/Video Maker</option>
+                      </select></div>
+                      <div class="s-12"><input id="link" name="link" placeholder="Links for your Work ( If any )." title="Link" type="text" /></div>
+                      <div class="s-12 m-12 l-4"><input type="file" name="fileToUpload" id="fileToUpload"></div>
                       <div><p style="display: none;" id="ValErr"><font color="red"> Please fill the details to submit the form successfully.</font></p></div>
                       <div><p style="display: none;" id="CaptchaErr"><font color="red"> Captcha Error: please prove you are a human.</font></p></div>
                       <div class="s-12 m-12 l-4"><button id='submit' class="color-btn" type="submit">Submit Button</button></div>
