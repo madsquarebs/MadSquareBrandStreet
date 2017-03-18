@@ -63,13 +63,17 @@
                       <div class="s-12"><input id="mobile" name="mobile" placeholder="Your conatct number" title="Your contact number" type="number" /></div>
                       <div class="s-12"><textarea id="addr" placeholder="Contact Address" name="addr" rows="5"></textarea></div>
                       <div class="s-12"><select id="roll" name="roll" >
+                      	<option id="free">What service you could freelance?? </option>
                       	<option id="anim">Animator</option>	
                       	<option id="cw">Copy Writer</option>
                       	<option id="des">Designer(Photoshop, Illustrator, etc.)</option>
                       	<option id="model">Model</option>
+                      	<option id="photo">Photographer</option>
                       	<option id="sound">Sound Engineer</option>
                       	<option id="vid">Adfilm Maker/Video Maker</option>
+                      	<option id="other">Others</option>
                       </select></div>
+                      <div class="s-12"><input id="other" name="other" placeholder="If other please specify." title="other" type="text" /></div>
                       <div class="s-12"><input id="link" name="link" placeholder="Links for your Work ( If any )." title="Link" type="text" /></div>
                       <div class="s-12 m-12 l-12"><input type="file" name="fileToUpload" id="fileToUpload"></div>
                       <div><p style="display: none;" id="ValErr"><font color="red"> Please fill the details to submit the form successfully.</font></p></div>
