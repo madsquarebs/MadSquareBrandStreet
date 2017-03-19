@@ -1,5 +1,7 @@
 var quotes = "";
+var time = 10;
 $(document).ready(function(){
+	setTimeout(timer,1000);
 	 $.ajax({
 	        type:"get",
 	        url:"quotes/quotes.php",
@@ -10,6 +12,11 @@ $(document).ready(function(){
 	        	setTimeout(hideOverlay,10000);
 	        }
 	    });
+	 function timer(){
+	 	time = time - 1; 
+	 	$("#close_btn").html('Continue to site ( '+time+' )');
+	 	setTimeout(timer,1000);
+	 }
 	 function hideOverlay(){
 	 	$(".overlay").fadeOut();
 	 	$('body').css({'overflow':'visible'});
