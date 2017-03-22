@@ -1,7 +1,7 @@
 var quotes = "";
 var time = 12;
 $(document).ready(function(){
-	setTimeout(timer,1000);
+	timer();
 	 $.ajax({
 	        type:"get",
 	        url:"quotes/quotes.php",
@@ -9,15 +9,14 @@ $(document).ready(function(){
 	        	quotes = msg;
 	        	$("#quote").html(quotes);
 	        	$('body').css({'overflow':'hidden'});
-	        	setTimeout(hideOverlay,10000);
 	        }
 	    });
 	 function timer(){
-	 	time = time - 1; 
-	 	if(time == 0){
-	 		hideOverlay();
-	 	}
 	 	$("#close_btn").html('Continue to site ( '+time+' )');
+	 	time = time - 1; 
+	 	if(time <= 0){
+	 		setTimeout(hideOverlay,1000);
+	 	}
 	 	setTimeout(timer,1000);
 	 }
 	 function hideOverlay(){
