@@ -1,5 +1,5 @@
 var quotes = "";
-var time = 10;
+var time = 12;
 $(document).ready(function(){
 	setTimeout(timer,1000);
 	 $.ajax({
@@ -14,6 +14,9 @@ $(document).ready(function(){
 	    });
 	 function timer(){
 	 	time = time - 1; 
+	 	if(time == 0){
+	 		hideOverlay();
+	 	}
 	 	$("#close_btn").html('Continue to site ( '+time+' )');
 	 	setTimeout(timer,1000);
 	 }
